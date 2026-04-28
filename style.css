@@ -105,3 +105,39 @@ body {
   flex-direction: column;
   gap: 20px;
 }
+
+.btn {
+  border: none;
+  background-color: transparent;
+  font-family: "IranYekan";
+  font-size: 18px;
+  cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 16px;
+  border: 2px solid var(--gray-900-);
+  height: 64px;
+  width: 240px;
+  color: var(--gray-900-);
+  transition: all 0.3s ease;
+}
+
+#log-in {
+  background-color: var(--gray-900-);
+  color: var(--gray-100-);
+}
+
+#log-in:hover {
+  transform: translateY(-8px);
+  background-color: transparent;
+  color: var(--gray-900-);
+}
+
+#sign-in:hover {
+  transform: translateY(-8px);
+  background-color: var(--gray-900-);
+  color: var(--gray-100-);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
