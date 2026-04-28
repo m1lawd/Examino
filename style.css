@@ -166,3 +166,37 @@ body {
   height: 40px;
   animation: float 2s ease-in-out infinite;
 }
+
+/* Shape */
+
+.shape {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+}
+
+#arrow-1 {
+  transform: rotate(90deg);
+  right: 8px;
+  top: 104px;
+}
+
+#arrow-2 {
+  left: 20%;
+  top: 90%;
+}
+
+#circles {
+  top: 60px;
+  right: 25%;
+}
+
+#wtf {
+  top: 0;
+  left: 0;
+}
+
+#wtf-2 {
+  bottom: 0;
+  right: 0;
+}
