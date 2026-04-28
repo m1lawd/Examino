@@ -67,6 +67,9 @@ body {
   align-items: center;
   height: 100vh;
 }
+.land {
+  position: relative;
+}
 
 .main {
   direction: ltr;
@@ -140,4 +143,26 @@ body {
 
 .btn:active {
   transform: translateY(0);
+}
+
+/* Mouse & The Animation */
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.mouse-icon {
+  position: absolute;
+  left: 50%;
+  width: 30px;
+  height: 40px;
+  animation: float 2s ease-in-out infinite;
 }
