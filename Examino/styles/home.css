@@ -221,12 +221,9 @@ body {
 }
 
 .slide-image img {
-  width: 100%;
-  height: auto;
-  max-height: 450px; /* محدودیت ارتفاع عکس */
+  max-height: 450px;
   border-radius: 20px;
   object-fit: cover;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* بخش متن */
