@@ -280,6 +280,10 @@ body {
   gap: 32px;
 }
 
+.footer a {
+  text-decoration: none;
+}
+
 .examino,
 .support {
   flex: 1;
