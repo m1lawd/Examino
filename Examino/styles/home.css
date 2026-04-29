@@ -87,10 +87,6 @@ body {
   flex-direction: column;
   gap: 20px;
 }
-.submit-int {
-  text-decoration: none;
-  color: var(--gray-900-);
-}
 
 .btn {
   border: none;
