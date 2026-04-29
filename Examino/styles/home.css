@@ -35,16 +35,6 @@ body {
   align-items: center;
 }
 
-.footer {
-  height: 30vh;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .land {
   background-color: var(--white-600-);
 }
@@ -263,4 +253,59 @@ body {
 .dot:hover {
   background-color: var(--gray-900-);
   transform: scale(1.2);
+}
+
+.footer {
+  height: 30vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  padding: 32px 0;
+  margin-top: 50px;
+  direction: rtl;
+}
+
+.footer-contect {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.examino,
+.support {
+  flex: 1;
+  min-width: 200px;
+}
+
+.f-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.f-disc {
+  font-size: 1rem;
+  color: #b0b0b0;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition:
+    color 0.3s ease,
+    padding-right 0.3s ease;
+}
+
+.f-disc:hover {
+  color: #ffffff;
+  padding-right: 5px;
 }
