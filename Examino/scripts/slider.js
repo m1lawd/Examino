@@ -25,8 +25,8 @@ function showSlide(n) {
   }
 
   // محاسبه میزان جابجایی
-  // چون min-width: 100% داریم، باید به اندازه عرض یک اسلاید جابجا بشیم
-  const offset = -(slideIndex - 1) * 100;
+  // در حالت RTL، برای حرکت به سمت راست، باید translateX مثبت باشه
+  const offset = (slideIndex - 1) * 100;
   slidesTrack.style.transform = `translateX(${offset}%)`;
 
   // آپدیت کردن دات‌ها
