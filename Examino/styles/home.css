@@ -182,3 +182,123 @@ body {
   transform: translate(-50%, -50%);
   opacity: 0.5;
 }
+
+/* تنظیمات کلی سکشن */
+.about {
+  background-color: #f0f0f0;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* یا هر ارتفاعی که دوست داری */
+}
+
+.about-container {
+  width: 90%;
+  max-width: 1200px;
+  position: relative;
+  overflow: hidden; /* مخفی کردن اسلایدهای خارج از کادر */
+}
+
+/* کانتینر اسلایدها */
+.slider-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* انیمیشن نرم */
+}
+
+/* هر اسلاید */
+.slide {
+  min-width: 100%; /* هر اسلاید کل عرض رو می‌گیره */
+  display: flex;
+  flex-direction: row; /* عکس و متن کنار هم */
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* بخش عکس */
+.slide-image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.slide-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* بخش متن */
+.slide-content {
+  flex: 1;
+  text-align: right; /* چون سایت فارسیه */
+}
+
+.slide-content h2 {
+  font-size: 2rem;
+  color: var(--gray-900-);
+  margin-bottom: 15px;
+}
+
+.slide-content p {
+  font-size: 1.1rem;
+  color: var(--gray-500-);
+  line-height: 1.6;
+}
+
+/* دکمه‌های ناوبری */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+  z-index: 10;
+  transition: background 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+/* نشانگرهای پایین (Dots) */
+.dots-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active,
+.dot:hover {
+  background-color: var(--gray-900-);
+}
