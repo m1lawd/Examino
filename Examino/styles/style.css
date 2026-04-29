@@ -62,31 +62,55 @@
 
 body {
   background-color: var(--white-600-);
+  font-family: "IranYekan", sans-serif;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.land,
+.about,
+.footer {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
+
 .land {
-  position: relative;
+  background-color: var(--white-600-);
+}
+
+.about {
+  background-color: #f0f0f0;
+}
+
+.footer {
+  background-color: var(--gray-900-);
+  color: var(--gray-100-);
 }
 
 .main {
-  direction: ltr;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 64px;
-  width: 1451px;
-  height: 824px;
+  width: 100%;
+  max-width: 1451px;
+  padding: 20px;
+  z-index: 1;
 }
 
 .main p {
-  position: relative;
   font-family: "IranYekan";
   font-size: 56px;
   font-weight: 300;
+  color: var(--gray-900-);
   margin-top: 0;
 }
 
@@ -94,7 +118,8 @@ body {
   font-family: "IranYekan";
   font-size: 115px;
   font-weight: 600;
-  margin-top: -40px;
+  color: var(--gray-900-);
+  margin-top: -20px;
 }
 
 .main-text {
@@ -145,8 +170,6 @@ body {
   transform: translateY(0);
 }
 
-/* Mouse & The Animation */
-
 @keyframes float {
   0% {
     transform: translateY(0px);
@@ -162,33 +185,20 @@ body {
 .mouse-icon {
   position: absolute;
   left: 50%;
+  transform: translateX(-50%);
+  bottom: 32px;
   width: 30px;
   height: 40px;
   animation: float 2s ease-in-out infinite;
+  z-index: 2;
 }
-
-/* Shape */
 
 .shape {
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   pointer-events: none;
-}
-
-#arrow-1 {
-  transform: rotate(90deg);
-  right: 8px;
-  top: 104px;
-}
-
-#arrow-2 {
-  left: 20%;
-  top: 90%;
-}
-
-#circles {
-  top: 60px;
-  right: 25%;
+  width: 150px;
+  height: auto;
 }
 
 #wtf {
@@ -197,6 +207,24 @@ body {
 }
 
 #wtf-2 {
-  bottom: 0;
+  top: 27.9%;
   right: 0;
+}
+
+#arrow-1 {
+  top: 3%;
+  right: 1%;
+  transform: rotate(90deg);
+}
+
+#arrow-2 {
+  bottom: 50px;
+  left: 50px;
+}
+
+#circles {
+  top: 7%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
 }
