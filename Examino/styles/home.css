@@ -154,3 +154,124 @@ body {
   border-radius: 30px;
   z-index: 99;
 }
+
+/*اسلایدر*/
+
+/* تنظیمات کلی سکشن */
+.about {
+  background-color: #f0f0f0; /* رنگ پس‌زمینه سکشن */
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  direction: rtl; /* مهم: جهت کل سکشن راست به چپ */
+}
+
+.about-box {
+  background-color: var(--white-600-);
+  height: 600px;
+  width: 1300px;
+  max-width: 90%; /* برای اینکه در موبایل هم خوب دیده بشه */
+  border-radius: 30px;
+  z-index: 99;
+  position: relative;
+  overflow: hidden; /* مخفی کردن اسلایدهای خارج از کادر */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* سایه برای زیبایی */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* کانتینر اسلایدها */
+.slider-wrapper {
+  width: 100%;
+  height: 100%; /* ارتفاع کل باکس */
+  position: relative;
+}
+
+.slides-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  /* در حالت RTL، برای حرکت به سمت راست (اسلاید بعدی)، translateX مثبت میشه */
+}
+
+/* هر اسلاید */
+.slide {
+  min-width: 100%; /* هر اسلاید کل عرض رو می‌گیره */
+  height: 100%;
+  display: flex;
+  flex-direction: row; /* عکس و متن کنار هم */
+  align-items: center;
+  justify-content: center;
+  gap: 50px; /* فاصله بین عکس و متن */
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* بخش عکس */
+.slide-image {
+  flex: 1;
+  max-width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-image img {
+  width: 100%;
+  height: auto;
+  max-height: 450px; /* محدودیت ارتفاع عکس */
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* بخش متن */
+.slide-content {
+  flex: 1;
+  text-align: right; /* متن فارسی راست‌چین */
+  padding-right: 20px;
+}
+
+.slide-content h2 {
+  font-size: 2.5rem;
+  color: var(--gray-900-);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.slide-content p {
+  font-size: 1.2rem;
+  color: var(--gray-500-);
+  line-height: 1.8;
+}
+
+/* نشانگرهای پایین (Dots) */
+.dots-container {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
+}
+
+.dot.active,
+.dot:hover {
+  background-color: var(--gray-900-);
+  transform: scale(1.2);
+}

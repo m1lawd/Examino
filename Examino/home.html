@@ -37,11 +37,65 @@
       <img src="assets/Mouse.png" alt="Mouse" class="mouse-icon" />
     </section>
     <section class="about" id="about">
-      <div class="about-box"></div>
+      <div class="about-box">
+        <!-- کانتینر اسلایدها -->
+        <div class="slider-wrapper">
+          <div class="slides-track">
+            <!-- اسلاید ۱ -->
+            <div class="slide">
+              <div class="slide-image">
+                <!-- عکس خودت رو اینجا بذار -->
+                <img src="assets/a1.png" alt="اسلاید ۱" />
+              </div>
+              <div class="slide-content">
+                <h2>عنوان اسلاید اول</h2>
+                <p>
+                  اینجا متن توضیحات مربوط به اسلاید اول قرار می‌گیره. می‌تونی هر
+                  متنی که دوست داری بنویسی.
+                </p>
+              </div>
+            </div>
+
+            <!-- اسلاید ۲ -->
+            <div class="slide">
+              <div class="slide-image">
+                <img src="assets/a2.png" alt="اسلاید ۲" />
+              </div>
+              <div class="slide-content">
+                <h2>عنوان اسلاید دوم</h2>
+                <p>
+                  متن اسلاید دوم. این بخش می‌تونه شامل جزئیات بیشتر یا ویژگی‌های
+                  خاص باشه.
+                </p>
+              </div>
+            </div>
+
+            <!-- اسلاید ۳ -->
+            <div class="slide">
+              <div class="slide-image">
+                <img src="assets/a3.png" alt="اسلاید ۳" />
+              </div>
+              <div class="slide-content">
+                <h2>عنوان اسلاید سوم</h2>
+                <p>متن اسلاید سوم. امیدوارم از این اسلایدر خوشت بیاد!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- نشانگرهای پایین (Dots) -->
+        <div class="dots-container">
+          <span class="dot active" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
     </section>
+
     <footer class="footer"></footer>
     <body>
       <script src="scripts/btn.js"></script>
+      <script src="scripts/slider.js"></script>
     </body>
   </body>
 </html>
