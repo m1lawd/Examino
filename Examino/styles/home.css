@@ -147,38 +147,10 @@ body {
   z-index: 2;
 }
 
-.shape {
-  position: absolute;
-  z-index: 1;
-  pointer-events: none;
-  width: 150px;
-  height: auto;
-}
-
-#wtf {
-  top: 0;
-  left: 0;
-}
-
-#wtf-2 {
-  top: 27.9%;
-  right: 0;
-}
-
-#arrow-1 {
-  top: 3%;
-  right: 1%;
-  transform: rotate(90deg);
-}
-
-#arrow-2 {
-  top: 30%;
-  left: 3%;
-}
-
-#circles {
-  top: 7%;
-  left: 70%;
-  transform: translate(-50%, -50%);
-  opacity: 0.5;
+.about-box {
+  background-color: var(--white-600-);
+  height: 600px;
+  width: 1300px;
+  border-radius: 30px;
+  z-index: 99;
 }
