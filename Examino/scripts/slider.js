@@ -32,25 +32,21 @@ function showSlide(n) {
 
   slidesTrack.style.transform = `translateX(${offset}%)`;
 
-  // آپدیت کردن دات‌ها
   dots.forEach((dot) => dot.classList.remove("active"));
   dots[slideIndex - 1].classList.add("active");
 }
 
-// تابع برای شروع اتوپلی
 function startAutoPlay() {
   autoPlayInterval = setInterval(() => {
-    showSlide((slideIndex += 1)); // هر 5 ثانیه بره به اسلاید بعدی
-  }, 5000); // 5000 میلی‌ثانیه = 5 ثانیه
+    showSlide((slideIndex += 1));
+  }, 4000);
 }
 
-// تابع برای ریست کردن تایمر (وقتی کاربر دستی کلیک می‌کنه)
 function resetAutoPlay() {
   clearInterval(autoPlayInterval);
   startAutoPlay();
 }
 
-// توقف اتوپلی وقتی موس روی اسلایدر میره (اختیاری، ولی خوبه)
 const sliderWrapper = document.querySelector(".slider-wrapper");
 sliderWrapper.addEventListener("mouseenter", () => {
   clearInterval(autoPlayInterval);
