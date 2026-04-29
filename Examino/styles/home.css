@@ -111,7 +111,7 @@ body {
 #log-in:hover {
   transform: translateY(-8px);
   background-color: transparent;
-  color: var(--gray-900-);
+  color: var(--gray-600-);
 }
 
 #sign-in:hover {
