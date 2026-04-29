@@ -63,7 +63,7 @@ body {
 .main p {
   font-family: "IranYekan";
   font-size: 56px;
-  font-weight: 500;
+  font-weight: 300;
   color: var(--gray-900-);
   margin-top: 0;
 }
@@ -71,7 +71,7 @@ body {
 .main h1 {
   font-family: "IranYekan";
   font-size: 115px;
-  font-weight: 800;
+  font-weight: 600;
   color: var(--gray-900-);
   margin-top: -50px;
 }
