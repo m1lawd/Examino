@@ -39,7 +39,7 @@ function showSlide(n) {
 function startAutoPlay() {
   autoPlayInterval = setInterval(() => {
     showSlide((slideIndex += 1));
-  }, 4000);
+  }, 3000);
 }
 
 function resetAutoPlay() {
