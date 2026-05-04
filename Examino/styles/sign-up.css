@@ -29,16 +29,16 @@
 }
 
 .input-container {
-  position: relative; /* برای موقعیت‌دهی لیبل */
+  position: relative;
   margin-bottom: 20px;
 }
 
 .input-container input {
-  width: 100%;
-  padding: 15px 10px; /* فضای داخلی */
+  width: 30%;
+  padding: 15px 10px;
   font-size: 16px;
-  border: 2px solid #ccc; /* رنگ بردر */
-  border-radius: 5px; /* گوشه‌های گرد */
+  border: 2px solid #ccc;
+  border-radius: 5px;
   outline: none;
   background: transparent;
   transition: border-color 0.3s;
