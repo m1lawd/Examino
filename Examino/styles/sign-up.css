@@ -12,6 +12,7 @@ body {
   direction: rtl;
   text-align: right;
   background-color: var(--white-600-);
+  padding: 20px;
 }
 
 .btn {
@@ -26,7 +27,7 @@ body {
   width: 120px;
   color: var(--gray-900-);
   transition: all 0.3s ease;
-  margin: 20px;
+  margin-bottom: 20px;
 }
 
 #back:hover {
@@ -35,16 +36,42 @@ body {
   color: var(--gray-100-);
 }
 
-.input-container {
+.form-container {
+  width: 800px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  margin-bottom: 24;
-  position: relative;
-  margin: 20px auto;
-  width: 300px;
+  gap: 32px;
 }
 
-.input-container input {
+.form-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.section-title {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: var(--gray-900-);
+  border-bottom: 2px solid var(--gray-900-);
+  padding-bottom: 5px;
+}
+
+.personal-info,
+.school-info {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.input-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+.input-wrapper input {
   width: 100%;
   padding: 15px 10px;
   font-size: 16px;
@@ -56,11 +83,11 @@ body {
   text-align: right;
 }
 
-.input-container input:focus {
+.input-wrapper input:focus {
   border-color: var(--gray-900-);
 }
 
-.input-container label {
+.input-wrapper label {
   position: absolute;
   top: 50%;
   right: 10px;
@@ -73,9 +100,9 @@ body {
   font-size: 16px;
 }
 
-.input-container input:focus + label,
-.input-container input:not(:placeholder-shown) + label {
-  top: 1px;
+.input-wrapper input:focus + label,
+.input-wrapper input:not(:placeholder-shown) + label {
+  top: 0;
   font-size: 12px;
   color: var(--gray-900-);
   background-color: var(--white-600-);
