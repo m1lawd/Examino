@@ -1,35 +1,28 @@
-// منتظر می‌مونیم تا صفحه کامل لود بشه
 document.addEventListener("DOMContentLoaded", function () {
-  // دکمه ورود رو پیدا می‌کنیم
   const loginBtn = document.getElementById("log-in");
 
-  // وقتی روی دکمه کلیک شد
   loginBtn.addEventListener("click", function () {
-    // به صفحه login.html برو
-    window.location.href = "login.html";
+    window.open("login.html", "_blank");
   });
 });
 
-// منتظر می‌مونیم تا صفحه کامل لود بشه
 document.addEventListener("DOMContentLoaded", function () {
-  // دکمه ورود رو پیدا می‌کنیم
   const loginBtn = document.getElementById("sign-in");
 
-  // وقتی روی دکمه کلیک شد
   loginBtn.addEventListener("click", function () {
-    // به صفحه login.html برو
-    window.location.href = "sign-up.html";
+    window.open("sign-in.html", "_blank");
   });
 });
 
-// منتظر می‌مونیم تا صفحه کامل لود بشه
 document.addEventListener("DOMContentLoaded", function () {
-  // دکمه ورود رو پیدا می‌کنیم
-  const loginBtn = document.getElementById("back");
+  const backBtn = document.getElementById("back");
 
-  // وقتی روی دکمه کلیک شد
-  loginBtn.addEventListener("click", function () {
-    // به صفحه login.html برو
-    window.location.href = "home.html";
+  backBtn.addEventListener("click", function () {
+    // تلاش برای بستن تب فعلی
+    window.close();
+
+    if (!window.closed) {
+      window.history.back();
+    }
   });
 });
